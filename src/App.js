@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import AppHeader from './components/app-header/app-header';
+import FilterForm from './components/filter-form/filter-form';
+import FilterColor from './components/filter-color/filter-color';
+import ListView from './components/list-view/list-view';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppHeader />
+      <FilterForm />
+      <FilterColor />
+      <ListView />
+    </>
   );
 }
 
