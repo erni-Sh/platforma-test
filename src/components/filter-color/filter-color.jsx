@@ -1,36 +1,56 @@
 import React from 'react';
 import '../../styles/checkboxes.scss';
 
+import { useDispatch, useSelector } from 'react-redux';
+import {changeColorsFilterAction} from "../../redux/actions/colorsActions";
+import {changeBrightnessFilterAction} from "../../redux/actions/brightnessActions";
+
 export default function FilterColor() {
+	const dispatch = useDispatch();
+
+	const changeCheckboxColor = () => {
+		const checkedColors = [];
+		const checkedBoxes = document.querySelectorAll('input[name=color]:checked');
+		checkedBoxes.forEach((box) => checkedColors.push(box.value));
+		dispatch(changeColorsFilterAction(checkedColors));
+	}
+
+	const changeCheckboxBrightness = () => {
+		const checkedBrightness = [];
+		const checkedBoxes = document.querySelectorAll('input[name=brightness]:checked');
+		checkedBoxes.forEach((box) => checkedBrightness.push(box.value));
+		dispatch(changeBrightnessFilterAction(checkedBrightness));
+	}
+
 	return (
 		<>
 			<div className={"checkbox-wrapper"} >
-				<input type={"checkbox"} id={"red"} />
+				<input type={"checkbox"} id={"red"} value={"red"} name={"color"} onChange={changeCheckboxColor} defaultChecked />
 				<label htmlFor={"red"}>Красные</label>
 			</div>
 			<div className={"checkbox-wrapper"} >
-				<input type={"checkbox"} id={"green"}/>
+				<input type={"checkbox"} id={"green"} value={"green"} name={"color"} onChange={changeCheckboxColor} defaultChecked/>
 				<label htmlFor={"green"}>Зеленые</label>
 			</div>
 			<div className={"checkbox-wrapper"} >
-				<input type={"checkbox"} id={"blue"}/>
+				<input type={"checkbox"} id={"blue"} value={"blue"} name={"color"} onChange={changeCheckboxColor} defaultChecked/>
 				<label htmlFor={"blue"}>Синие</label>
 			</div>
 			<div className={"checkbox-wrapper"} >
-				<input type={"checkbox"} id={"yellow"}/>
+				<input type={"checkbox"} id={"yellow"} value={"yellow"} name={"color"} onChange={changeCheckboxColor} defaultChecked/>
 				<label htmlFor={"yellow"}>Желтые</label>
 			</div>
 
 			<div>
-				<input type={"radio"} id={"all"} name={"darkness"} />
+				<input type={"radio"} id={"all"} value={""} name={"brightness"} onChange={changeCheckboxBrightness} defaultChecked />
 				<label htmlFor={"all"}>Все</label>
 			</div>
 			<div>
-				<input type={"radio"} id={"dark"} name={"darkness"} />
+				<input type={"radio"} id={"dark"} value={"dark"} name={"brightness"} onChange={changeCheckboxBrightness} />
 				<label htmlFor={"dark"}>тёмные</label>
 			</div>
 			<div>
-				<input type={"radio"} id={"light"} name={"darkness"} />
+				<input type={"radio"} id={"light"} value={"light"} name={"brightness"} onChange={changeCheckboxBrightness} />
 				<label htmlFor={"light"}>светлые</label>
 			</div>
 
