@@ -3,9 +3,7 @@ import '../../styles/checkboxes.scss';
 import '../../styles/filter-colors.scss'
 
 import { useDispatch, useSelector } from 'react-redux';
-import { changeColorsFilterAction } from "../../redux/actions/colorsActions";
-import { changeBrightnessFilterAction } from "../../redux/actions/brightnessActions";
-import { changeColumnsFilterAction } from "../../redux/actions/columnsActions";
+import { changeColorsFilterAction, changeBrightnessFilterAction, changeColumnsFilterAction } from "../../redux/actions/filterActions";
 
 export default function FilterColor() {
 	const [ visible, setVisible ] = useState(false);
@@ -27,7 +25,7 @@ export default function FilterColor() {
 
 	const changeColumns = () => {
 		const checkedBoxes = document.querySelector('input[name=columns]');
-		dispatch(changeColumnsFilterAction(checkedBoxes.value));
+		dispatch(changeColumnsFilterAction(Number(checkedBoxes.value)));
 	}
 
 	return (

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/platforma-test/build/static/css/main.0941872b.chunk.css",
-    "main.js": "/platforma-test/build/static/js/main.bb96fef0.chunk.js",
-    "main.js.map": "/platforma-test/build/static/js/main.bb96fef0.chunk.js.map",
+    "main.css": "/platforma-test/build/static/css/main.2b05f593.chunk.css",
+    "main.js": "/platforma-test/build/static/js/main.44ac49a2.chunk.js",
+    "main.js.map": "/platforma-test/build/static/js/main.44ac49a2.chunk.js.map",
     "runtime~main.js": "/platforma-test/build/static/js/runtime~main.ddec30b0.js",
     "runtime~main.js.map": "/platforma-test/build/static/js/runtime~main.ddec30b0.js.map",
-    "static/js/2.e0b6985a.chunk.js": "/platforma-test/build/static/js/2.e0b6985a.chunk.js",
-    "static/js/2.e0b6985a.chunk.js.map": "/platforma-test/build/static/js/2.e0b6985a.chunk.js.map",
+    "static/js/2.e193ea01.chunk.js": "/platforma-test/build/static/js/2.e193ea01.chunk.js",
+    "static/js/2.e193ea01.chunk.js.map": "/platforma-test/build/static/js/2.e193ea01.chunk.js.map",
     "index.html": "/platforma-test/build/index.html",
-    "precache-manifest.2ee018624b486e28ecddc773a719d43e.js": "/platforma-test/build/precache-manifest.2ee018624b486e28ecddc773a719d43e.js",
+    "precache-manifest.1f976e9ccca1fc265ce99f73f9ad2f84.js": "/platforma-test/build/precache-manifest.1f976e9ccca1fc265ce99f73f9ad2f84.js",
     "service-worker.js": "/platforma-test/build/service-worker.js",
-    "static/css/main.0941872b.chunk.css.map": "/platforma-test/build/static/css/main.0941872b.chunk.css.map"
+    "static/css/main.2b05f593.chunk.css.map": "/platforma-test/build/static/css/main.2b05f593.chunk.css.map"
   }
 }

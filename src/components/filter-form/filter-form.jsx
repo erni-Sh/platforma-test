@@ -3,7 +3,7 @@ import '../../styles/checkboxes.scss';
 import '../../styles/filter-form.scss';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { changeFormsFilterAction } from "../../redux/actions/formsActions";
+import { changeFormsFilterAction } from "../../redux/actions/filterActions";
 
 export default function FilterForm() {
 	const dispatch = useDispatch();
