@@ -1,0 +1,20 @@
+.list_view {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: auto;
+}
+
+.figure {
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.square {
+  border-radius: 5px;
+}
+
+.circle {
+  border-radius: 50%;
+}

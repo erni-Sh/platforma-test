@@ -2,8 +2,9 @@ import React from 'react';
 import '../../styles/checkboxes.scss';
 
 import { useDispatch, useSelector } from 'react-redux';
-import {changeColorsFilterAction} from "../../redux/actions/colorsActions";
-import {changeBrightnessFilterAction} from "../../redux/actions/brightnessActions";
+import { changeColorsFilterAction } from "../../redux/actions/colorsActions";
+import { changeBrightnessFilterAction } from "../../redux/actions/brightnessActions";
+import { changeColumnsFilterAction } from "../../redux/actions/columnsActions";
 
 export default function FilterColor() {
 	const dispatch = useDispatch();
@@ -15,11 +16,16 @@ export default function FilterColor() {
 		dispatch(changeColorsFilterAction(checkedColors));
 	}
 
-	const changeCheckboxBrightness = () => {
+	const changeBrightness = () => {
 		const checkedBrightness = [];
 		const checkedBoxes = document.querySelectorAll('input[name=brightness]:checked');
 		checkedBoxes.forEach((box) => checkedBrightness.push(box.value));
 		dispatch(changeBrightnessFilterAction(checkedBrightness));
+	}
+
+	const changeColumns = () => {
+		const checkedBoxes = document.querySelector('input[name=columns]');
+		dispatch(changeColumnsFilterAction(checkedBoxes.value));
 	}
 
 	return (
@@ -42,20 +48,20 @@ export default function FilterColor() {
 			</div>
 
 			<div>
-				<input type={"radio"} id={"all"} value={""} name={"brightness"} onChange={changeCheckboxBrightness} defaultChecked />
+				<input type={"radio"} id={"all"} value={""} name={"brightness"} onChange={changeBrightness} defaultChecked />
 				<label htmlFor={"all"}>Все</label>
 			</div>
 			<div>
-				<input type={"radio"} id={"dark"} value={"dark"} name={"brightness"} onChange={changeCheckboxBrightness} />
+				<input type={"radio"} id={"dark"} value={"dark"} name={"brightness"} onChange={changeBrightness} />
 				<label htmlFor={"dark"}>тёмные</label>
 			</div>
 			<div>
-				<input type={"radio"} id={"light"} value={"light"} name={"brightness"} onChange={changeCheckboxBrightness} />
+				<input type={"radio"} id={"light"} value={"light"} name={"brightness"} onChange={changeBrightness} />
 				<label htmlFor={"light"}>светлые</label>
 			</div>
 
 			<label htmlFor={"columns"}>Колонки</label>
-			<input type={"number"} id={"columns"} placeholder={4} max={4} min={1}/>
+			<input type={"number"} id={"columns"} placeholder={4} max={4} min={1} name={"columns"} onChange={changeColumns}/>
 		</>
 	)
 }
