@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0941872b.chunk.css",
-    "main.js": "/static/js/main.7b36ef3e.chunk.js",
-    "main.js.map": "/static/js/main.7b36ef3e.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.592d2717.js",
-    "runtime~main.js.map": "/static/js/runtime~main.592d2717.js.map",
-    "static/js/2.e0b6985a.chunk.js": "/static/js/2.e0b6985a.chunk.js",
-    "static/js/2.e0b6985a.chunk.js.map": "/static/js/2.e0b6985a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7126e0057bcd83d218bba5fca1e04ac1.js": "/precache-manifest.7126e0057bcd83d218bba5fca1e04ac1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.0941872b.chunk.css.map": "/static/css/main.0941872b.chunk.css.map"
+    "main.css": "/platforma-test/build/static/css/main.0941872b.chunk.css",
+    "main.js": "/platforma-test/build/static/js/main.bb96fef0.chunk.js",
+    "main.js.map": "/platforma-test/build/static/js/main.bb96fef0.chunk.js.map",
+    "runtime~main.js": "/platforma-test/build/static/js/runtime~main.ddec30b0.js",
+    "runtime~main.js.map": "/platforma-test/build/static/js/runtime~main.ddec30b0.js.map",
+    "static/js/2.e0b6985a.chunk.js": "/platforma-test/build/static/js/2.e0b6985a.chunk.js",
+    "static/js/2.e0b6985a.chunk.js.map": "/platforma-test/build/static/js/2.e0b6985a.chunk.js.map",
+    "index.html": "/platforma-test/build/index.html",
+    "precache-manifest.2ee018624b486e28ecddc773a719d43e.js": "/platforma-test/build/precache-manifest.2ee018624b486e28ecddc773a719d43e.js",
+    "service-worker.js": "/platforma-test/build/service-worker.js",
+    "static/css/main.0941872b.chunk.css.map": "/platforma-test/build/static/css/main.0941872b.chunk.css.map"
   }
 }

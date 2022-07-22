@@ -33,5 +33,7 @@
   },
   "devDependencies": {
     "sass": "^1.53.0"
-  }
+  },
+
+  "homepage": "https://erni-sh.github.io/platforma-test/build/"
 }
