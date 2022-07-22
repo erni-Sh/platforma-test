@@ -1,0 +1,79 @@
+.filter-colors {
+  background: #DDDDDD;
+  position: absolute;
+  display: none;
+  z-index: 10;
+  margin-top: 45px;
+  padding: 10px;
+  width: 135px;
+  height: 500px;
+
+  &_visible {
+    display: block;
+  }
+
+  &__block {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+.filter-color__gamburger input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 30px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.filter-color__gamburger .hamburger-lines {
+  display: block;
+  height: 28px;
+  width: 35px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter-color__gamburger .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #333;
+}
+
+.filter-color__gamburger .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.filter-color__gamburger .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.filter-color__gamburger .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.filter-color__gamburger input[type="checkbox"]:checked~.menu-items {
+  transform: translateX(0);
+}
+
+.filter-color__gamburger input[type="checkbox"]:checked~.hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.filter-color__gamburger input[type="checkbox"]:checked~.hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.filter-color__gamburger input[type="checkbox"]:checked~.hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
